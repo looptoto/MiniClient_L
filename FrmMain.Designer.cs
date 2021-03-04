@@ -80,6 +80,12 @@
             this.ctxMenuRoster.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+            //!!!!!!!note1 test value:!!!!!
+            this.txtUsername.Text = "13513113811";
+            this.txtPassword.Text = "123456";
+            this.txtServer.Text = "iZvakr3x81zsbjZ";
+            this.txtHost.Text = "39.98.142.129";
+
             // 
             // cmdConnect
             // 
@@ -315,6 +321,7 @@
             this.sendFileToolStripMenuItem.Name = "sendFileToolStripMenuItem";
             this.sendFileToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.sendFileToolStripMenuItem.Text = "send File";
+            this.sendFileToolStripMenuItem.Click += new System.EventHandler(this.sendFileToolStripMenuItem_Click);
             // 
             // vCardToolStripMenuItem
             // 
@@ -537,6 +544,7 @@
         private System.Windows.Forms.ToolStripMenuItem presenceAwayToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem presenceExtendedAwayToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem presenceDoNotDisturbToolStripMenuItem;
+        
     }
 }
 

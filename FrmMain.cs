@@ -426,6 +426,16 @@ namespace MiniClient
                 }
             }
         }
+        private void sendFileToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            if (listContacts.SelectedItems.Count > 0)
+            {
+                var item = listContacts.SelectedItems[0];
+             
+                new  FrmSendFile(fm, item.Name).Show();
+            }
+        }
+
 
         private void vCardToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
